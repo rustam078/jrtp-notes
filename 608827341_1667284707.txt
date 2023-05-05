@@ -1,0 +1,137 @@
+=====================================
+Module-2 : Java Realtime Tools (20+ Tools)
+=====================================
+
+-> Tools are going to play major role in every project development
+
+
+=>  Build Tools : Ant, Maven & Gradle
+
+					- Project Folder Structure Creation
+					- Download Required Dependencies (Ex: spring, hibernate etc..)
+					- Source Code Compilation
+					- Unit Case Execution 
+					- Package the project ( jar / war )
+
+=> Version Control Softwares : SVN, GIT Hub and BitBucket
+
+					- Code Integration
+					- Monitored Access
+
+=>  Code Review Tools : PMD & SonarQube
+
+					- Bugs
+					- Vulnerabilities (security issues)
+					- Code Smells
+					- Duplicate Code
+					- Code Coverage (industry standard is 80%)
+
+
+=> Logging Tools  : Log4J, Log4J2, Logback, Logstash & SLF4J
+
+					- To generate logs of our application
+					- Using application logs we can find issues root cause
+
+
+=> Log Monitoring Tools :  Putty, WinScp, ELK & Splunk
+
+					- To get log msgs of the application
+					- Connect to log file and understand the logs
+					
+
+=> Unit Testing Tools : JUnit & Mocking
+
+					- To implement Unit Testing
+					- Testing each unit amount of work
+					- To Perform isloated unit testing we will use Mockito
+
+					Ex: EasyMock, PowerMock, Mockito, WireMock, JMockito etc...
+
+
+=> Code Coverage Tools : Cobertura & Jacocco
+					
+					- To check how many lines of code tested in Unit Testing
+					- Industry standard is 80%
+
+
+***************  Note: For newly joined team members, below tasks will be assigned for first 2 to 3 months ****************
+			
+					1) Sonar Issues Fixing
+					2) Writing Unit Test Cases
+					3) Improve Code Coverage
+
+
+=> Project Management Tool : JIRA
+
+					 - Story Creation
+              				 - Work Assignments
+					 - Story Tracking
+
+
+=> CI CD Tools : Jenkins
+
+					- To Automate Build & Deployment
+					- Jenkins Job will deploy our code into server with single button click
+
+=>  Containerization : Docker
+
+					 - Package application code + application dependencies
+
+=> Orchestration  : Docker Swarm, Kubernetes, OpenShift
+
+					 - To manage containers (Creation, Delete, Scale Up, Scale Down etc...)
+
+=> Performance Testing Tools : JMETER
+		
+					- To check application stability
+					- To check avg response time of application
+
+=> API Testing Tools : POSTMAN, Swagger UI
+
+				 	- To test backend REST APIs
+
+=> Message Broker : Kafka
+
+					- Distributed Streaming
+					- Publisher & Subscriber Mode
+
+=> Cache Tools : Redis
+
+					- Distributed Cache
+					- To reduce no.of DB calls for static data
+
+
+-------------------------------------------------------------------------------------------------------------
+
+Below tools will give more weighate for java developers to get the job
+
+1) Kafka
+
+2) Docker
+
+3) Kubernetes
+
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Note: Only Docker & K8S will start @7 AM IST  (JRTP Plan-2 students will get Docker & K8S videos also)
+---------------------------------------------------------------------------------------------------------------------------------------------------
+
+Only Docker & K8S -> 5000 INR
+
+JRTP + AWS cloud + Angular + Docker + Kubernetes =======> 7000 INR
+
+5000 + 10000 + 5000 + 5000 ==> 25000
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+JRTP Timings : 8:30 AM - 9:45 AM (IST)
+
+Docker with K8S : 7:00 AM - 8:15 AM (IST) ---> It will start after one month
+
+JRTP Plan-1 Students should attend Docker - K8S - Live Classes
+
+JRTP Plan-2 students will get Docker & K8S Live Access + Videos Access also
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+

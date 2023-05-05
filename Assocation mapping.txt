@@ -1,0 +1,323 @@
+==================================================
+Association Mapping / Relationships in DB tables
+==================================================
+
+=> We can divide DB side relations into  4 types
+
+Note: To establish relationships between table we will use Foregin Key.
+
+
+1) One To One   ( Ex: One Person will have one Passport )
+
+2) One To Many  ( Ex : One Employee will have Multiple Addresses )
+
+3) Many To One  ( Ex:  Multiple Books belongs to one Author )
+
+4) Many To Many ( Ex: Multiple Users having Multiple Roles  )
+
+
+=> When DB tables are having Relation then we need to represent that relation in our Entity classes also.
+
+=> The process of representing DB tables relation in Entity classes is called as Association Mapping.
+
+
+Cascade Type :  Default Type is NONE : It represents operations on parent record should reflect on child record or not.
+
+	Ex: When we delete parent record then we want to delete all Child Records of that Parent.
+
+Fetch Type : Default Type is LAZY : It represents weather to load child records along with Parent or not
+
+	Ex: When we retrieve Parent record then i want to retrieve all child records of that Parent.
+
+
+
+====================================One To One Relation========================================
+
+@Entity
+@Data
+public class Person {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer personId;
+
+	private String personName;
+
+	private String personGender;
+
+	@OneToOne(mappedBy = "person", cascade = CascadeType.ALL)
+	private Passport passport;
+
+}
+
+@Entity
+@Data
+public class Passport {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer passportId;
+
+	private String passportNum;
+
+	private LocalDate issuedDate;
+
+	private LocalDate expiryDate;
+
+	@OneToOne
+	@JoinColumn(name = "person_id")
+	private Person person;
+
+}
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
+
+		PersonRepository personRepo = context.getBean(PersonRepository.class);
+
+		PassportRepository passportRepo = context.getBean(PassportRepository.class);
+
+		/*Person person = new Person();
+		person.setPersonName("Ashok");
+		person.setPersonGender("Male");
+
+		Passport passport = new Passport();
+		passport.setPassportNum("KV7979HKI");
+		passport.setIssuedDate(LocalDate.now());
+		passport.setExpiryDate(LocalDate.now().plusYears(10));
+
+		person.setPassport(passport);
+		passport.setPerson(person);
+		
+		personRepo.save(person);*/
+		
+		//personRepo.findById(1);
+		
+		personRepo.deleteById(1);
+
+	}
+}
+
+=> When we insert parent record (person) then child record (passport) also getting inserted
+
+=> When we retrieve parent record then it is retriving both parent and child records
+
+=> When we delete parent record then it is deleting child record also
+
+
+================================One To Many Mappinng =======================================
+
+@Entity
+@Data
+public class Employee {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer empId;
+	private String empName;
+	private Double empSalary;
+
+	@OneToMany(mappedBy = "emp", cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+	private List<Address> addr;
+
+}
+
+@Entity
+@Data
+public class Address {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer addrId;
+	private String city;
+	private String state;
+	private String country;
+
+	@ManyToOne(fetch=FetchType.LAZY)
+	@JoinColumn(name = "emp_id")
+	private Employee emp;
+}
+
+public interface EmpRepository extends JpaRepository<Employee, Integer>{
+
+}
+
+public interface AddressRepository extends JpaRepository<Address, Integer>{
+
+}
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
+
+		EmpRepository empRepository = context.getBean(EmpRepository.class);
+		AddressRepository addrReposiotry = context.getBean(AddressRepository.class);
+
+		Employee e = new Employee();
+		e.setEmpName("Raja");
+		e.setEmpSalary(4000.00);
+
+		Address a1 = new Address();
+		a1.setCity("Hyd");
+		a1.setState("TG");
+		a1.setCountry("India");
+		a1.setEmp(e);
+
+		Address a2 = new Address();
+		a2.setCity("GNT");
+		a2.setState("AP");
+		a2.setCountry("India");
+		a2.setEmp(e);
+
+		// setting addresses to emp
+		List<Address> addrList = Arrays.asList(a1, a2);
+		e.setAddr(addrList);
+
+		// empRepository.save(e);
+
+		// empRepository.findById(2);
+
+		// empRepository.deleteById(1);
+
+		// addrReposiotry.findById(3);
+	}
+}
+
+
+=> When we insert parent (emp) record then child (address) records also inserted
+
+=> When we retrieve parent record then child records retriveal depends on FETCHTYPE
+
+				Lazy  => Retrieve only parent record  (It is default)
+
+				Eager => Retrieve parent record + child records
+
+=> When we delete parent record then child records also getting deleted.
+
+=> When we retrieve child record it is retrieveing child + parent record.
+
+=> We can't delete child record directley when it is having relationship with parent.
+
+Note: To delete particular child record then we need to make it as ORPHAN record and then we can delete.
+
+Orphan Record : The record which doesn't have any relationship with parent.
+
+
+
+========================================= Many To Many =========================================
+
+=> Multiple Authors will publish Multiple Books
+
+=> Multiple Books are having Multiple Lessons
+
+=> Multiple Users are having Mulitple Roles
+
+==================================================================================================
+
+
+@Entity
+@Data
+public class User {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer userId;
+	private String username;
+	private LocalDate userDob;
+	private String gender;
+	
+	@ManyToMany(cascade = { CascadeType.PERSIST, CascadeType.MERGE })
+	@JoinTable(
+			name="user_roles",
+			joinColumns = {
+		        @JoinColumn(name = "user_id")
+		    },
+		    inverseJoinColumns = {
+		        @JoinColumn(name = "role_id")
+		    }
+	)
+	private List<Role> roles;
+
+}
+
+@Entity
+@Data
+public class Role {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer roleId;
+	private String roleName;
+
+	@ManyToMany(mappedBy = "roles")
+	private List<User> users;
+
+}
+
+
+package in.ashokit.service;
+
+import java.time.LocalDate;
+import java.util.Arrays;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import in.ashokit.entities.Role;
+import in.ashokit.entities.User;
+import in.ashokit.repo.RoleRepo;
+import in.ashokit.repo.UserRepo;
+
+@Service
+public class UserRoleService {
+
+	@Autowired
+	private UserRepo userRepo;
+
+	@Autowired
+	private RoleRepo roleRepo;
+
+	public void saveUserWithRoles() {
+
+		Role r1 = new Role();
+		r1.setRoleName("Manager");
+
+		Role r2 = new Role();
+		r2.setRoleName("Admin");
+
+		User user = new User();
+		user.setUsername("Ashok");
+		user.setGender("Male");
+		user.setUserDob(LocalDate.now().minusYears(20));
+
+		user.setRoles(Arrays.asList(r1, r2));
+
+		userRepo.save(user);
+
+	}
+
+	public void getUser(int id) {
+		Optional<User> findById = userRepo.findById(id);
+
+	}
+
+	public void getRole(int id) {
+		Optional<Role> findById = roleRepo.findById(id);
+
+	}
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,398 @@
+==================================
+JAVA REAL-TIME PROJECT - TRAINING
+==================================
+
+Name : Ashok (9+ Yrs Exp, Working in Product Based Company from Hyd)
+
+Skill Set : Java, J2EE, Spring Boot, Microservices, Angular, Linux, DevOps & AWS Cloud
+
+I am having 6+ Yrs of Training Experience
+
+Batch Code : 22-JRTP
+
+==============
+Pre-Requisites
+==============
+
+1) Core Java 
+
+2) Advanced Java ( JDBC & Servlets )
+
+3) SQL
+
+Note: If you have completed Core Java, Adv Java & SQL then only join for JRTP
+
+4) Spring Core (IOC, DI, Scope, Autowiring, Bean Lifecycle)
+
+5) Spring Boot & Microservices (SBMS)
+
+
+Note: You can do SBMS & JRTP paralelly
+
+Note: My SBMS new batch will start in 20 - 25 days of time (8:00 PM (IST) )
+
+
+==============
+Course Content
+==============
+
+
+Module-1 : Software Industry Information
+				 - Types of S/w companies
+				 - Types Of S/w Projects
+				 - Types of S/w Jobs
+				 - Interview Process
+				 - Cover the Gap as Experience
+
+Module-2 : Realtime Tools (20+ Tools)
+
+				 - Maven
+				 - Gradle
+				 - Nexus
+				 - Project Lombok
+				 - GIT Hub
+				 - Log4J
+				 - Putty/ WinscP
+				 - ELK
+				 - JUnit
+				 - Mocking
+				 - Jacocco
+				 - SonarQube
+				 - JMeter
+				 - PostMan
+				 - Swagger
+				 - JIRA
+				 - Jenkins
+				 - Docker
+				 - Kubernetes
+				 - Kafka
+				 - Redis
+				
+
+Module-3 : Mini Projects Development (4 Mini Projects)
+
+				 - Requirements Analsysis
+				 - DB design
+				 - Components Design
+				 - Development
+				 - Testing
+				 - Code Review
+				 - Deployment
+
+Note: The main aim of Module-3 is to make you independent programmer & to improve your coding skills
+
+
+Note: For Mini Projects we will use Spring Boot & Microservices
+
+
+Module-4 : Microservices
+
+				 - Service Registry (EurekaServer)
+				 - ApiGateway
+				 - Circuit Breaker
+				 - AdminServer & AdminClinet
+				 - Distributed Logging (Sleuth & Zipkin)
+				 - FeignClient
+
+Module-5 : Major Project ( Insurance / Banking )					
+			
+	Note: For Major Project we will use Spring Boot & Microservices
+				
+Note: Our major project you can keep in Resume to attend interviews
+
+Module-6 :  Frontend Development using Angular Framework
+
+				 - Backend with Frontend Integration
+
+Module- 7 : AWS Cloud
+
+			 - What is Cloud
+			 - AWS Account Creation
+			 - VM launching in AWS
+			 - Cloud Deployment
+
+Module-8  : Interview Guide
+
+				  - Interview Questions
+				  - Resume Preparation
+				  - Roles & Responsibilities
+				  - Daily Activities
+				  - Joining Formalities
+				  - First day & Last day
+				  - Email Writing Skills
+				  - Conclusion
+
+
+**************** Download Course Content : https://ashokitech.com/java-realtime-project-online-training ********************
+
+
+===============
+Course Details
+================
+
+Course Code  : 22-JRTP  (Java Realtime Project)
+
+Mode : Online (daily live classes)
+
+Start Date : 27-Oct-2022
+
+Class Timings: 8:30 AM - 9:45 AM (IST)   (Mon - Sat)
+
+Duration : 3.5 Months (10 days +/-)
+
+Plan-1 : 7,000 INR ( Only Live Sessions + Daily Class Notes )
+
+Plan-2 : 12,000 INR (Live Sessions + Backup videos - 6 months + Daily Class Notes)
+
+
+Note: You can attend 3 regular sessions for Free, then you can take the enrollment
+
+
+Note: From tomorrow our Module-1 will start
+
+
+
+===============================
+Module-1 : Software Industry Details
+================================
+
+Types of Software Companies
+
+				- Product Based Companies
+	
+				- Service Based Companies
+	
+				- Outsourcing Companies
+
+
+-> Product Based Companies will develop the projects/products and will sell to customers in the market
+
+			Ex: Microsoft, Google, Amazon, Oracle, Samsung, Dell, HP etc.....
+
+-> Service Based Companies will develop the projects based on client requirement
+
+			Ex: TCS, Infosys, Wipro, TechM, Deloitte, Cognizent, Capgemeni, HCL etc............
+
+-> Outsourcing Companies will send resources to other companies based on demand
+
+			Ex: SourceOneMgmt, ResourcePool, A2HR etc.....
+
+Note: Most of the service based companies are doing outsourcing business
+
+
+				HCL --------------------> Microsoft
+
+				CTS ------------------> JPMC
+
+				TCS  --------> Oracle
+
+
+				Payroll Company : The company which gives salary for us  ( Ex: HCL)
+
+				Client Company : The company for which we will work  (Ex: Microsoft)
+
+
+=============================
+Interview Process in IT Companies
+==============================
+
+Product Based Companies will conduct interviews on below topics
+
+				 -  Data Structures
+				 - Algorithms
+				 - Design Patterns
+				 - System Design
+				 - Problem Solving
+				 - Coding Tests
+
+Product Based Company Salary Structure : Years.of.exp * 5 to 6 lakhs
+
+
+Service Based Companies will conduct interviews on below topics
+
+				 - Java  Concepts
+				 - Java 8
+				 - Spring Boot
+				 - Microservices
+				 - Frontend
+				 - Tools
+				 - Project Scenarios
+
+Service Based Company Salary Structure : Years.of.exp * 3 to 4 lakhs
+
+==================
+Types Of Projects
+=================
+
+1) Scratch Development Projects
+
+2) Maintenence / Support Projects
+
+3) Migration Projects
+
+
+-> The project which we are developing from very beginning is called as Scratch Developmet (Brand new)
+-> Lot of learning scope will be available in scratch development projects
+
+
+-> For the existing projects companies will provide Maintenence or Support
+
+				a ) Changing Request (CR)
+				b ) New Enhancements
+				c ) Bug Fixing
+
+-> Change Request means based on client requirement we need to change existing functionality
+
+-> New Enhancement means adding new functionality in the existing project
+
+-> Bug Fixing means fixing the issues occuring in the code
+
+
+
+-> Migration Project Means upgrading the project
+
+				a) Technology Upgrade   (Mainframes ----> Java)
+				b) Architecture Upgrade  (Monolith -----> Microservices)
+				c) Version Upgrade  (Java 1.6 ----> Java 11)
+
+
+**************** Note: Weekly assignments will be available (Assignment submission is mandatory) ***********
+
+
+URL : https://t.me/ashokitofficial
+
+Telegram Username : @ashokitofficial
+
+=====================================
+Module-2 : Java Realtime Tools (20+ Tools)
+=====================================
+
+-> Tools are going to play major role in project development
+
+
+=>  Build Tools : Ant, Maven & Gradle
+
+					- Project Folder Structure Creation
+					- Download Required Dependencies (Ex: spring, hibernate etc..)
+					- Source Code Compilation
+					- Unit Case Execution 
+					- Package the project ( jar / war )
+
+=> Version Control Softwares : SVN, GIT Hub and BitBucket
+
+					- Code Integration
+					- Monitored Access
+
+=>  Code Review Tools : PMD & SonarQube
+
+					- Bugs
+					- Vulnerabilities (security issues)
+					- Code Smells
+					- Duplicate Code
+					- Code Coverage (industry standard is 80%)
+
+
+=> Logging Tools  : Log4J, Log4J2, Logback, Logstash & SLF4J
+
+					- To generate logs of our application
+					- Using application logs we can find issues root cause
+
+
+=> Log Monitoring Tools :  Putty, WinScp, ELK & Splunk
+
+					- To get log msgs of the application
+					- Connect to log file and understand the logs
+					
+
+=> Unit Testing Tools : JUnit & Mocking
+
+					- To implement Unit Testing
+					- Testing each unit amount of work
+					- To Perform isloated unit testing we will use Mockito
+
+					Ex: EasyMock, PowerMock, Mockito, WireMock, JMockito etc...
+
+
+=> Code Coverage Tools : Cobertura & Jacocco
+					
+					- To check how many lines of code tested in Unit Testing
+					- Industry standard is 80%
+
+
+***************  Note: For newly joined team members, below tasks will be assigned for first 2 to 3 months ****************
+			
+					1) Sonar Issues Fixing
+					2) Writing Unit Test Cases
+					3) Improve Code Coverage
+
+
+=> Project Management Tool : JIRA
+
+					 - Story Creation
+              				 - Work Assignments
+					 - Story Tracking
+
+
+=> CI CD Tools : Jenkins
+
+					- To Automate Build & Deployment
+					- Jenkins Job will deploy our code into server with single button click
+
+=>  Containerization : Docker
+
+					 - Package application code + application dependencies
+
+=> Orchestration  : Docker Swarm, Kubernetes, OpenShift
+
+					 - To manage containers (Creation, Delete, Scale Up, Scale Down etc...)
+
+=> Performance Testing Tools : JMETER
+		
+					- To check application stability
+					- To check avg response time of application
+
+=> API Testing Tools : POSTMAN, Swagger UI
+
+				 	- To test backend REST APIs
+
+
+=> Message Broker : Kafka
+
+					- Distributed Streaming
+					- Publisher & Subscriber Mode
+
+=> Cache Tools : Redis
+
+					- Distributed Cache
+					- To reduce no.of DB calls for static data
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					
+
+
+
+
+
+
+
+
+
+
+
+
